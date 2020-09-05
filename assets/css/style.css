@@ -1,0 +1,15 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+#search {
+    margin-top: 100px;
+}
+
+input::placeholder {
+    font-style: italic;
+};
+
+form {
+    border: 2px solid;
+};

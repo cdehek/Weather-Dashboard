@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/70fcd40144.js" crossorigin="anonymous"></script>
+    
+     <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div class="bg-dark navbar-nav">
+                <h1 class="text-center text-light bg-dark">Weather Dashboard</h1>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-md-3 pl-2">
+            <div class="card" style="width: 22rem">
+                <div class="card-body">
+                    <h6>Search for a city:</h6>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="New York, Chicago, etc.." id="city-input">
+                        </div>
+                        <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <ul id="city-list" class="list-group"></ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="current-weather" class="card">
+                <div class="card-body">
+                    <div id="city-date-icon">
+                        <span id="city-name">
+                        </span>
+                        <span id="current-icon"></span>
+                    </div>
+                    <p class="card-text" id="current-temp"></p>
+                    <p class="card-text" id="current-humidity"></p>
+                    <p class="card-text" id="current-wind"></p>
+                    <p class="card-text" id="current-uv"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
