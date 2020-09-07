@@ -26,9 +26,9 @@
                     <h6>Search for a city:</h6>
                     <form class="form-inline">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="New York, Chicago, etc.." id="city-input">
+                            <input type="text" class="form-control" placeholder="New York, Chicago, etc.." name="city-name" id="city-name">
                         </div>
-                        <button id="search-button" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                        <button id="search-btn" onclick="getCityName()" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
             </div>
@@ -53,48 +53,50 @@
             <div class="row">
                 <div id="forecast-weather" class="col-md-9">
                     <h4>5-Day Forecast:</h4>
-                    <div class="card forecast">
-                        <div id="forecast1" class="card-body">
-                            <span class="card-title" id="forecast-date1"></span>
-                            <span id="forecast-icon1"></span>
-                            <p class="card-text" id="forecast-temp1"></p>
-                            <p class="card-text" id="forecast-humidity1"></p>
+                    <div id="forecast-cards">
+                        <div class="card forecast">
+                            <div id="forecast1" class="card-body">
+                                <span class="card-title" id="forecast-date1"></span>
+                                <span id="forecast-icon1"></span>
+                                <p class="card-text" id="forecast-temp1"></p>
+                                <p class="card-text" id="forecast-humidity1"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card forecast">
-                        <div id="forecast2" class="card-body">
-                            <span class="card-title" id='forecast-date2'>
-                            </span>
-                            <span id='forecast-icon2'></span>
-                            <p class="card-text" id="forecast-temp2"></p>
-                            <p class="card-text" id="forecast-humidity2"></p>
+                        <div class="card forecast">
+                            <div id="forecast2" class="card-body">
+                                <span class="card-title" id='forecast-date2'>
+                                </span>
+                                <span id='forecast-icon2'></span>
+                                <p class="card-text" id="forecast-temp2"></p>
+                                <p class="card-text" id="forecast-humidity2"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card forecast">
-                        <div id="forecast3" class="card-body">
-                            <span class="card-title" id='forecast-date3'>
-                            </span>
-                            <span id='forecast-icon3'></span>
-                            <p class="card-text" id="forecast-temp3"></p>
-                            <p class="card-text" id="forecast-humidity3"></p>
+                        <div class="card forecast">
+                            <div id="forecast3" class="card-body">
+                                <span class="card-title" id='forecast-date3'>
+                                </span>
+                                <span id='forecast-icon3'></span>
+                                <p class="card-text" id="forecast-temp3"></p>
+                                <p class="card-text" id="forecast-humidity3"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card forecast">
-                        <div id="forecast4" class="card-body">
-                            <span class="card-title" id='forecast-date4'>
-                            </span>
-                            <span id='forecast-icon4'></span>
-                            <p class="card-text" id="forecast-temp4"></p>
-                            <p class="card-text" id="forecast-humidity4"></p>
+                        <div class="card forecast">
+                            <div id="forecast4" class="card-body">
+                                <span class="card-title" id='forecast-date4'>
+                                </span>
+                                <span id='forecast-icon4'></span>
+                                <p class="card-text" id="forecast-temp4"></p>
+                                <p class="card-text" id="forecast-humidity4"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card forecast">
-                        <div id="forecast5" class="card-body">
-                            <span class="card-title" id='forecast-date5'>
-                            </span>
-                            <span id='forecast-icon5'></span>
-                            <p class="card-text" id="forecast-temp5"></p>
-                            <p class="card-text" id="forecast-humidity5"></p>
+                        <div class="card forecast">
+                            <div id="forecast5" class="card-body">
+                                <span class="card-title" id='forecast-date5'>
+                                </span>
+                                <span id='forecast-icon5'></span>
+                                <p class="card-text" id="forecast-temp5"></p>
+                                <p class="card-text" id="forecast-humidity5"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,6 +106,7 @@
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
