@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: "Open Sans", sans-serif;
 }
 
@@ -6,9 +6,7 @@ body {
     margin-top: 100px;
 }
 
-input::placeholder {
-    font-style: italic;
-};
+
 
 #forecast-cards {
     display: flex;
@@ -18,5 +16,8 @@ input::placeholder {
 
 #city-list {
     width: 22rem;
-};
+}; */
 
+input::placeholder {
+    font-style: italic;
+};
